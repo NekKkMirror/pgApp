@@ -10,4 +10,4 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/v1/students', studentsRoute)
 
-app.listen(PORT, () => console.log(`http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`start on port ${PORT}`))
