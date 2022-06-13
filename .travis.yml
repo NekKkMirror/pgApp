@@ -1,0 +1,17 @@
+langugage: node_js
+node_js: 
+  - "stable"
+
+script: 
+  - npm run dev
+
+ 
+deploy: 
+  provider: heroku
+  api_key:
+    secure: $he
+  strategy: git
+  app: 
+    main: pgapp12
+  run: 
+    -restart
